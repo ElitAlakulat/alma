@@ -1,7 +1,43 @@
 <html lang="hu">
-<head></head>
+<head>
+<style>
+	span{
+		font-size:200px;
+	}
+	img{
+		position:relative;
+		margin-left:600px;
+		animation-name: be;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+	}
+	#nyil{
+		font-size:50px;
+		display:none;
+		animation-name: meg;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+	}
+	
+	@keyframes be{
+	0%   {right:1000px;}
+	25%   {right:1000px;}
+	100% {right:0px;}
+}
+
+</style>
+
+<script>
+	window.setTimeout ("alma();", 5000);
+	function alma(){
+		document.getElementById("nyil").style.display="block"
+	}
+</script>
+
+</head>
 <body>
-<a href="alma.html">hello</a>
+<span>Szia</span><br/>
+<img src="2.png" height="300"/>
+<div id="nyil">El akarsz menni valahova? <a href="pali.png">Igen</a></div>
 </body>
 </html>
-
